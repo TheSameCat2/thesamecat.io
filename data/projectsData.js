@@ -1,19 +1,16 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Nostr Relay',
+    description: `A Nostr relay with attitude and a low entry price.`,
+    imgSrc: '/static/images/_61ea0ba0-eb9f-4ba3-b5a9-a800963ad379.jpg',
+    href: 'https://nostr.thesamecat.io',
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'Image Hosting',
+    description: `Host your Nostr images without being tracked. 
+    Oh, and with EXIF data removed.`,
+    imgSrc: '/static/images/_f3957866-9ad6-43d8-b8ad-e593b725b9ac.jpg',
+    href: 'https://picsur.thesamecat.io',
   },
 ]
 

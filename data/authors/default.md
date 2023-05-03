@@ -1,16 +1,18 @@
 ---
-name: Tails Azimuth
-avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+name: TheSameCat
+avatar: /static/images/1ae9cbd20b4a955383e95d43226888cc.jpg
+occupation: Chief Mouse Catcher
+company: There is No Spoon, Inc.
+email: thesamecat@proton.me
+twitter:
+linkedin:
+github: https://github.com/TheSameCat2
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+TheSameCat is a cat. He chases mice and sleeps all day.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+When he is not chasing mice or sleeping, he likes to write code.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+When he is not writing code, he is playing with other cats on Nostr.
+
+Hang out with him on [Nostr]("https://snort.social/p/npub1wtuh24gpuxjyvnmjwlvxzg8k0elhasagfmmgz0x8vp4ltcy8ples54e7js")
