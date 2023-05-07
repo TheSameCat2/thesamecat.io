@@ -15,4 +15,4 @@ When he is not chasing mice or sleeping, he likes to write code.
 
 When he is not writing code, he is playing with other cats on Nostr.
 
-Hang out with him on [Nostr]("https://snort.social/p/npub1wtuh24gpuxjyvnmjwlvxzg8k0elhasagfmmgz0x8vp4ltcy8ples54e7js")
+Hang out with him on <a href="https://snort.social/p/npub1wtuh24gpuxjyvnmjwlvxzg8k0elhasagfmmgz0x8vp4ltcy8ples54e7js">Nostr</a>.
