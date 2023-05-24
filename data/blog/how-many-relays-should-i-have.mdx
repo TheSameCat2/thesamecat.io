@@ -1,0 +1,92 @@
+---
+title: 'How Many Relays Should I Have?'
+date: '2023-05-24'
+tags: ['nostr', 'relays', 'newcomers', 'newbies']
+draft: false
+summary: 'A guide to relays for newcomers to Nostr'
+author: default
+---
+
+# **How Many Relays Should I Have?**
+
+While this is technically a very subjective question, it is also the one I get asked the most by new people on Nostr. Answering it in a genuinely helpful way is also a little longer than suits itself to writing in a short form on my phone, so I decided to sit down and write something that I could link to when someone needs the information
+
+**It Depends**
+
+Primarily, the biggest determiner of how many relays you have will be the platform you are using to surf Nostr the most. Different hardware and runtimes have different bottlenecks and constraints. If you are on mobile, the quality of your connection and battery life are going to be a couple of the most important factors. If you use a web UI, the JavaScript runtime is going to be a limiting factor. If you are using a native application on a desktop PC - go ham.
+
+**Paid vs. Free**
+
+_Disclaimer: The author runs a paid relay._
+
+Whether to use paid or free relays is a matter of preference, necessity, and tolerance to spam. Free relays by their very nature are going to have a lot more spam, but also a lot more users. Using a free relay, therefore, brings the benefit of it being much more likely you will share a common relay with another user (which is the only way you have of seeing one another). Paid relays on the other hand, tend to have less spam by default because very few spammers have shown themselves willing to pay an admission fee only to forfeit it the moment an operator notices they are spreading spam.
+
+I am not a purist with relays, and recommend a mixture of both paid and free relays. On clients that support it, I tend to limit my global feed to only content from paid relays in order to reduce the spam and discover more real people. I publish to and read from all relays for my home feed. This maximizes the chances of my content being discovered, and allows me to stay in touch with and interact with the real people that I see in threads, who I may also decide to follow.
+
+Right now, I use about a 50/50 mixture of paid and free relays. I also use the filter service from [https://nostr.wine](https://nostr.wine/) to aggregate a few other free relays, while filtering much of the spam.
+
+**Mobile**
+
+There are no public stats or tracking of client metrics available for Nostr, but my very strong impression is that most users spend most of their time scrolling through content on their mobile devices. Mobile devices typically have less bandwidth available and/or limited data caps, along with limited battery life. Nostr is an energy hungry protocol, so it is important to optimize your relays if you primarily browse on mobile.
+
+My experimentation across three android devices (two high end phones, and one low end tablet) seems to indicate that a relay count between 10-15 seems to hit a sweet spot for conserving battery life while providing adequate connections to reach all the people I interact with. Below is my relay list as an example. You should tailor your own list to match the relays where the people you interact with are.
+
+1. wss://relay.nostr.band/
+2. wss://relay.plebstr.com/
+3. wss://nostr.wine/
+4. [wss://filter.nostr.wine/npub1wtuh24gpuxjyvnmjwlvxzg8k0elhasagfmmgz0x8vp4ltcy8ples54e7js?broadcast=true](wss://filter.nostr.wine/npub1wtuh24gpuxjyvnmjwlvxzg8k0elhasagfmmgz0x8vp4ltcy8ples54e7js?broadcast=true)
+5. wss://relay.damus.io/
+6. wss://nostr-dev.wellorder.net/
+7. wss://nostr-01.bolt.observer/
+8. [wss://nostr.thesamecat.io/](wss://nostr.thesamecat.io/) (author's relay)
+9. wss://relay.nostrcheck.me/
+10. wss://nostr.mutinywallet.com/
+11. wss://relay.taxi
+12. [wss://nostr.foundrydigital.com](wss://nostr.foundrydigital.com)
+
+filter.nostr.wine adds these relays:
+- wss://relay.damus.io
+- wss://nos.lol
+- wss://relay.snort.social
+- wss://nostr1.current.fyi
+- wss://nostr-pub.wellorder.net
+- wss://relay.nostr.bg
+- wss://no.str.cr
+- wss://nostr.mom
+- wss://relay.plebstr.com
+- wss://offchain.pub
+- wss://nostr.bitcoiner.social
+- wss://spore.ws
+- wss://nostr21.com
+
+I constantly adjust this list, so it will most likely change by the time you read this. The more relays you are connected to, the more work your phone's modem has to do maintaining those connections. Many events you will receive from each relay are also duplicates, as many of your friends will have similar relays listed as you do! This costs energy as your phone's processor has to process these feeds from every relay you use, and toss out duplicates.
+
+Remember, you only need _one_ shared relay with any given friend to be able to communicate.
+
+**Web UI's**
+
+Web UI's are complicated. On a powerful desktop computer, you can get away with quite a number of connected relays. I have had as many as 25 or so while running snort on a Risen 5800X, and had no issues.
+
+Beyond that, even on a desktop computer, you are asking an awful lot of a JavaScript VM. On a laptop running on battery, it is even worse. If you are a road warrior, I would follow the same advice that I give for mobile, for the exact same reasons. Less data to download, less to process = more time on that battery.
+
+**Native Desktop Clients**
+
+There are no too many of these, but my honorable mention here is going to be Gossip ( [https://github.com/mikedilger/gossip](https://github.com/mikedilger/gossip) ) by Mike Dilger (npub1acg6thl5psv62405rljzkj8spesceyfz2c32udakc2ak0dmvfeyse9p35c).
+
+Gossip really only needs a few seed relays added, and to be cut loose to find your friends relays for itself. There is some great advice on configuring Gossip here: [https://nostr.com/clients/gossip](https://nostr.com/clients/gossip) and I highly recommend you check out this awesome site.
+
+If you are on a beefy computer with a fast Internet connection, you can crank up the "Number of relays to query per person" and "Maximum following feed relays" numbers a bit. I keep mine set at 2, and 30 respectively, and enjoy excellent coverage of my follows and very good performance.
+
+**Ok, But Which Relays?**
+
+This is a matter of experimentation. I highly recommend checking out the relay listings at [https://nostr.watch](https://nostr.watch/) which will give you an idea of how fast the connection to different relays is from your location.
+
+Speed is not everything though. The number of people using a relay, as well as it's spam/content ratio, and whether they charge a fee will also come into consideration. It is very much worth investing in a few paid relays! My Nostr experience was completely different after getting three or four paid relays added to my list. If you have a lightning wallet set up, you should definitely consider checking some of them out.
+
+I would be a bad friend if I didn't mention [https://nostr.wine](https://nostr.wine/) (18888 sats) as an excellent first one, and my dear friend Quentin's (npub138s5hey76qrnm2pmv7p8nnffhfddsm8sqzm285dyc0wy4f8a6qkqtzx624) relay, which you can get for free (and a NIP-05 address!) by visiting [https://nostrcheck.me/](https://nostrcheck.me/) as a couple of very worthy ones to experiment with.
+
+**Conclusion**
+
+I wish you only the best on your journey exploring the world of Nostr, the truly decentralized and censorship resistant social network protocol. If you need a hand, be sure to reach out.
+
+TheSameCat (npub1wtuh24gpuxjyvnmjwlvxzg8k0elhasagfmmgz0x8vp4ltcy8ples54e7js)
